@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="我的Note">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="我的Note">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的Note">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>我的Note</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">我的Note</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">笔记</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/26/36个问题/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aiden">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的Note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/04/26/36个问题/" class="post-title-link" itemprop="http://yoursite.com/index.html">36个问题,揭露你自己</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-04-26 16:08:05" itemprop="dateCreated datePublished" datetime="2018-04-26T16:08:05+08:00">2018-04-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-12-13 11:08:58" itemprop="dateModified" datetime="2018-12-13T11:08:58+08:00">2018-12-13</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="第一组："><a href="#第一组：" class="headerlink" title="第一组："></a>第一组：</h3><h5 id="1-假如可以选择世界上任何人，你希望邀请谁共进晚餐？"><a href="#1-假如可以选择世界上任何人，你希望邀请谁共进晚餐？" class="headerlink" title="1. 假如可以选择世界上任何人，你希望邀请谁共进晚餐？"></a>1. 假如可以选择世界上任何人，你希望邀请谁共进晚餐？</h5><h5 id="2-你希望成名吗？在哪一方面？"><a href="#2-你希望成名吗？在哪一方面？" class="headerlink" title="2. 你希望成名吗？在哪一方面？"></a>2. 你希望成名吗？在哪一方面？</h5><h5 id="3-拨打电话前，你会先练习要说的话吗？为什么？"><a href="#3-拨打电话前，你会先练习要说的话吗？为什么？" class="headerlink" title="3. 拨打电话前，你会先练习要说的话吗？为什么？"></a>3. 拨打电话前，你会先练习要说的话吗？为什么？</h5><h5 id="4-对你来说，怎样才算是“完美”的一天？"><a href="#4-对你来说，怎样才算是“完美”的一天？" class="headerlink" title="4. 对你来说，怎样才算是“完美”的一天？"></a>4. 对你来说，怎样才算是“完美”的一天？</h5><h5 id="5-上一次唱歌给自己听是什么时候？唱歌给别人听又是什么时候呢？"><a href="#5-上一次唱歌给自己听是什么时候？唱歌给别人听又是什么时候呢？" class="headerlink" title="5. 上一次唱歌给自己听是什么时候？唱歌给别人听又是什么时候呢？"></a>5. 上一次唱歌给自己听是什么时候？唱歌给别人听又是什么时候呢？</h5><h5 id="6-假如你能够活到90岁，并且你可以选择让你的心智或身体在后60年一直停留在30岁，你会选择哪一个？"><a href="#6-假如你能够活到90岁，并且你可以选择让你的心智或身体在后60年一直停留在30岁，你会选择哪一个？" class="headerlink" title="6. 假如你能够活到90岁，并且你可以选择让你的心智或身体在后60年一直停留在30岁，你会选择哪一个？"></a>6. 假如你能够活到90岁，并且你可以选择让你的心智或身体在后60年一直停留在30岁，你会选择哪一个？</h5><h5 id="7-关于未来你可能怎么死，你有自己的秘密预感吗？"><a href="#7-关于未来你可能怎么死，你有自己的秘密预感吗？" class="headerlink" title="7. 关于未来你可能怎么死，你有自己的秘密预感吗？"></a>7. 关于未来你可能怎么死，你有自己的秘密预感吗？</h5><h5 id="8-列举3个你和对方共同拥有的特质。"><a href="#8-列举3个你和对方共同拥有的特质。" class="headerlink" title="8. 列举3个你和对方共同拥有的特质。"></a>8. 列举3个你和对方共同拥有的特质。</h5><h5 id="9-你的人生中最感恩的事情是什么？"><a href="#9-你的人生中最感恩的事情是什么？" class="headerlink" title="9. 你的人生中最感恩的事情是什么？"></a>9. 你的人生中最感恩的事情是什么？</h5><h5 id="10-假如可以改变你成长过程中的任何事，你希望有哪些改变？"><a href="#10-假如可以改变你成长过程中的任何事，你希望有哪些改变？" class="headerlink" title="10. 假如可以改变你成长过程中的任何事，你希望有哪些改变？"></a>10. 假如可以改变你成长过程中的任何事，你希望有哪些改变？</h5><h5 id="11-用4分钟的时间，尽可能详细地向对方讲述你的人生故事。"><a href="#11-用4分钟的时间，尽可能详细地向对方讲述你的人生故事。" class="headerlink" title="11. 用4分钟的时间，尽可能详细地向对方讲述你的人生故事。"></a>11. 用4分钟的时间，尽可能详细地向对方讲述你的人生故事。</h5><h5 id="12-假如明天早上起床后能获得任何一种能力或特质，你希望是什么？"><a href="#12-假如明天早上起床后能获得任何一种能力或特质，你希望是什么？" class="headerlink" title="12. 假如明天早上起床后能获得任何一种能力或特质，你希望是什么？"></a>12. 假如明天早上起床后能获得任何一种能力或特质，你希望是什么？</h5><h3 id="第二组："><a href="#第二组：" class="headerlink" title="第二组："></a>第二组：</h3><h5 id="13-假如有颗水晶球能告诉你关于自己、人生或未来的一切真相，你想知道什么？"><a href="#13-假如有颗水晶球能告诉你关于自己、人生或未来的一切真相，你想知道什么？" class="headerlink" title="13. 假如有颗水晶球能告诉你关于自己、人生或未来的一切真相，你想知道什么？"></a>13. 假如有颗水晶球能告诉你关于自己、人生或未来的一切真相，你想知道什么？</h5><h5 id="14-有什么事想做很久了？还没去做的原因是？"><a href="#14-有什么事想做很久了？还没去做的原因是？" class="headerlink" title="14. 有什么事想做很久了？还没去做的原因是？"></a>14. 有什么事想做很久了？还没去做的原因是？</h5><h5 id="15-你人生最大的成就是什么？"><a href="#15-你人生最大的成就是什么？" class="headerlink" title="15. 你人生最大的成就是什么？"></a>15. 你人生最大的成就是什么？</h5><h5 id="16-友情中你最重视哪一个部份？"><a href="#16-友情中你最重视哪一个部份？" class="headerlink" title="16. 友情中你最重视哪一个部份？"></a>16. 友情中你最重视哪一个部份？</h5><h5 id="17-你最珍贵的回忆是什么？"><a href="#17-你最珍贵的回忆是什么？" class="headerlink" title="17. 你最珍贵的回忆是什么？"></a>17. 你最珍贵的回忆是什么？</h5><h5 id="18-你最糟糕的回忆是什么？"><a href="#18-你最糟糕的回忆是什么？" class="headerlink" title="18. 你最糟糕的回忆是什么？"></a>18. 你最糟糕的回忆是什么？</h5><h5 id="19-如果你知道自己将在一年内突然死去，你会改变自己目前的生活方式吗？为什么？"><a href="#19-如果你知道自己将在一年内突然死去，你会改变自己目前的生活方式吗？为什么？" class="headerlink" title="19. 如果你知道自己将在一年内突然死去，你会改变自己目前的生活方式吗？为什么？"></a>19. 如果你知道自己将在一年内突然死去，你会改变自己目前的生活方式吗？为什么？</h5><h5 id="20-友情对你而言意味着什么？"><a href="#20-友情对你而言意味着什么？" class="headerlink" title="20. 友情对你而言意味着什么？"></a>20. 友情对你而言意味着什么？</h5><h5 id="21-爱和感情在你生命里扮演什么样的角色？"><a href="#21-爱和感情在你生命里扮演什么样的角色？" class="headerlink" title="21. 爱和感情在你生命里扮演什么样的角色？"></a>21. 爱和感情在你生命里扮演什么样的角色？</h5><h5 id="22-轮流分享你认为对方拥有的比较好的性格特点。各自提5点。"><a href="#22-轮流分享你认为对方拥有的比较好的性格特点。各自提5点。" class="headerlink" title="22. 轮流分享你认为对方拥有的比较好的性格特点。各自提5点。"></a>22. 轮流分享你认为对方拥有的比较好的性格特点。各自提5点。</h5><h5 id="23-你的家庭关系亲密温暖吗？你是否觉得自己的童年比大部分人快乐？"><a href="#23-你的家庭关系亲密温暖吗？你是否觉得自己的童年比大部分人快乐？" class="headerlink" title="23. 你的家庭关系亲密温暖吗？你是否觉得自己的童年比大部分人快乐？"></a>23. 你的家庭关系亲密温暖吗？你是否觉得自己的童年比大部分人快乐？</h5><h5 id="24-你与母亲的关系如何？"><a href="#24-你与母亲的关系如何？" class="headerlink" title="24. 你与母亲的关系如何？"></a>24. 你与母亲的关系如何？</h5><h3 id="第三组："><a href="#第三组：" class="headerlink" title="第三组："></a>第三组：</h3><h5 id="25-说出3个含有“我们”并且符合实际情况的句子，比如“我们现在都在这个房间里”。"><a href="#25-说出3个含有“我们”并且符合实际情况的句子，比如“我们现在都在这个房间里”。" class="headerlink" title="25. 说出3个含有“我们”并且符合实际情况的句子，比如“我们现在都在这个房间里”。"></a>25. 说出3个含有“我们”并且符合实际情况的句子，比如“我们现在都在这个房间里”。</h5><h5 id="26-完成这个句子：“我希望可以跟某个人分享——”。"><a href="#26-完成这个句子：“我希望可以跟某个人分享——”。" class="headerlink" title="26. 完成这个句子：“我希望可以跟某个人分享——”。"></a>26. 完成这个句子：“我希望可以跟某个人分享——”。</h5><h5 id="27-如果你要成为对方的密友，有什么事是他或她需要知道的？"><a href="#27-如果你要成为对方的密友，有什么事是他或她需要知道的？" class="headerlink" title="27. 如果你要成为对方的密友，有什么事是他或她需要知道的？"></a>27. 如果你要成为对方的密友，有什么事是他或她需要知道的？</h5><h5 id="28-告诉对方你喜欢他或她的什么地方（回答此题必须非常诚实，要说出你可能不会对刚认识的人说的事）。"><a href="#28-告诉对方你喜欢他或她的什么地方（回答此题必须非常诚实，要说出你可能不会对刚认识的人说的事）。" class="headerlink" title="28. 告诉对方你喜欢他或她的什么地方（回答此题必须非常诚实，要说出你可能不会对刚认识的人说的事）。"></a>28. 告诉对方你喜欢他或她的什么地方（回答此题必须非常诚实，要说出你可能不会对刚认识的人说的事）。</h5><h5 id="29-和对方分享你人生中尴尬的时刻。"><a href="#29-和对方分享你人生中尴尬的时刻。" class="headerlink" title="29. 和对方分享你人生中尴尬的时刻。"></a>29. 和对方分享你人生中尴尬的时刻。</h5><h5 id="30-上次在别人面前哭是什么时候？自己哭又是什么时候？"><a href="#30-上次在别人面前哭是什么时候？自己哭又是什么时候？" class="headerlink" title="30. 上次在别人面前哭是什么时候？自己哭又是什么时候？"></a>30. 上次在别人面前哭是什么时候？自己哭又是什么时候？</h5><h5 id="31-告诉对方，你现在喜欢他或她什么地方。"><a href="#31-告诉对方，你现在喜欢他或她什么地方。" class="headerlink" title="31. 告诉对方，你现在喜欢他或她什么地方。"></a>31. 告诉对方，你现在喜欢他或她什么地方。</h5><h5 id="32-有什么事是绝对不能开玩笑的？"><a href="#32-有什么事是绝对不能开玩笑的？" class="headerlink" title="32. 有什么事是绝对不能开玩笑的？"></a>32. 有什么事是绝对不能开玩笑的？</h5><h5 id="33-如果你今天晚上就会死掉，而且无法与任何人联系，你最遗憾还没有告诉别人什么事？为什么还没说呢？"><a href="#33-如果你今天晚上就会死掉，而且无法与任何人联系，你最遗憾还没有告诉别人什么事？为什么还没说呢？" class="headerlink" title="33. 如果你今天晚上就会死掉，而且无法与任何人联系，你最遗憾还没有告诉别人什么事？为什么还没说呢？"></a>33. 如果你今天晚上就会死掉，而且无法与任何人联系，你最遗憾还没有告诉别人什么事？为什么还没说呢？</h5><h5 id="34-你的房子起火了，你所有的东西都在里面。在救出所爱的人和宠物后，你还有时间可以安全地抢救出最后一件东西。你会拿什么？为什么？"><a href="#34-你的房子起火了，你所有的东西都在里面。在救出所爱的人和宠物后，你还有时间可以安全地抢救出最后一件东西。你会拿什么？为什么？" class="headerlink" title="34. 你的房子起火了，你所有的东西都在里面。在救出所爱的人和宠物后，你还有时间可以安全地抢救出最后一件东西。你会拿什么？为什么？"></a>34. 你的房子起火了，你所有的东西都在里面。在救出所爱的人和宠物后，你还有时间可以安全地抢救出最后一件东西。你会拿什么？为什么？</h5><h5 id="35-在你所有家人当中，谁的死对你的打击会最大？为什么？"><a href="#35-在你所有家人当中，谁的死对你的打击会最大？为什么？" class="headerlink" title="35. 在你所有家人当中，谁的死对你的打击会最大？为什么？"></a>35. 在你所有家人当中，谁的死对你的打击会最大？为什么？</h5><h5 id="36-分享你人生中的一个问题，问对方遇到这样的问题会怎么做。同时也请对方告诉你，在他或她看来，你对这个问题的感受是什么。"><a href="#36-分享你人生中的一个问题，问对方遇到这样的问题会怎么做。同时也请对方告诉你，在他或她看来，你对这个问题的感受是什么。" class="headerlink" title="36.分享你人生中的一个问题，问对方遇到这样的问题会怎么做。同时也请对方告诉你，在他或她看来，你对这个问题的感受是什么。"></a>36.分享你人生中的一个问题，问对方遇到这样的问题会怎么做。同时也请对方告诉你，在他或她看来，你对这个问题的感受是什么。</h5>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Aiden</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">categories</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">  <span class="exturl" data-url="aHR0cDovL3d3dy5taWl0YmVpYW4uZ292LmNu">粤ICP备18055421号 </span>&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aiden</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Mist</span> v6.6.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  <script src="/js/src/js.cookie.js?v=6.6.0"></script>
+  <script src="/js/src/scroll-cookie.js?v=6.6.0"></script>
+
+
+  
+  <script src="/js/src/exturl.js?v=6.6.0"></script>
+
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('Copied')
+          else $(this).text('Copy failed')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('Copy')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+  
+
+</body>
+</html>
