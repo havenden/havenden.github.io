@@ -107,18 +107,18 @@
 
 
 
-  <meta name="description" content="服务器安装了最新的python3.7.1之后，做好了软链接，准备安装pip安装方式为脚本：get-pip.py执行脚本有如下报错  1ModuleNotFound：No module named &apos;_ctypes&apos;  这是因为在python3.7之后的版本中需要一个新的依赖，安装之后重新编译python即可123yum install libffi-devel -ycd /usr/local/s">
+  <meta name="description" content="服务器安装了最新的python3.7.1之后，做好了软链接，准备安装pip安装方式为脚本：get-pip.py执行脚本有如下报错  1ModuleNotFound：No module named &apos;_ctypes&apos;  这是因为在python3.7之后的版本中需要一个新的依赖，安装之后重新编译python即可  123yum install libffi-devel -ycd /usr/local">
 <meta name="keywords" content="python,centos,yum,pip">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Centos安装Python3.7,pip和yum问题">
 <meta property="og:url" content="http://yoursite.com/2018/12/13/centos-python3.7安装-pip和yum问题/index.html">
 <meta property="og:site_name" content="我的Note">
-<meta property="og:description" content="服务器安装了最新的python3.7.1之后，做好了软链接，准备安装pip安装方式为脚本：get-pip.py执行脚本有如下报错  1ModuleNotFound：No module named &apos;_ctypes&apos;  这是因为在python3.7之后的版本中需要一个新的依赖，安装之后重新编译python即可123yum install libffi-devel -ycd /usr/local/s">
+<meta property="og:description" content="服务器安装了最新的python3.7.1之后，做好了软链接，准备安装pip安装方式为脚本：get-pip.py执行脚本有如下报错  1ModuleNotFound：No module named &apos;_ctypes&apos;  这是因为在python3.7之后的版本中需要一个新的依赖，安装之后重新编译python即可  123yum install libffi-devel -ycd /usr/local">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-13T08:43:38.593Z">
+<meta property="og:updated_time" content="2018-12-13T08:46:33.657Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Centos安装Python3.7,pip和yum问题">
-<meta name="twitter:description" content="服务器安装了最新的python3.7.1之后，做好了软链接，准备安装pip安装方式为脚本：get-pip.py执行脚本有如下报错  1ModuleNotFound：No module named &apos;_ctypes&apos;  这是因为在python3.7之后的版本中需要一个新的依赖，安装之后重新编译python即可123yum install libffi-devel -ycd /usr/local/s">
+<meta name="twitter:description" content="服务器安装了最新的python3.7.1之后，做好了软链接，准备安装pip安装方式为脚本：get-pip.py执行脚本有如下报错  1ModuleNotFound：No module named &apos;_ctypes&apos;  这是因为在python3.7之后的版本中需要一个新的依赖，安装之后重新编译python即可  123yum install libffi-devel -ycd /usr/local">
 
 
 
@@ -356,7 +356,7 @@
                 
               
 
-              <time title="创建时间：2018-12-13 16:08:05 / 修改时间：16:43:38" itemprop="dateCreated datePublished" datetime="2018-12-13T16:08:05+08:00">2018-12-13</time>
+              <time title="创建时间：2018-12-13 16:08:05 / 修改时间：16:46:33" itemprop="dateCreated datePublished" datetime="2018-12-13T16:08:05+08:00">2018-12-13</time>
             
 
             
@@ -417,12 +417,13 @@
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ModuleNotFound：No module named '_ctypes'</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>这是因为在python3.7之后的版本中需要一个新的依赖，安装之后重新编译python即可<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum install libffi-devel -y</span><br><span class="line">cd /usr/local/src/Python-3.7.1</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure></p>
+<p>这是因为在python3.7之后的版本中需要一个新的依赖，安装之后重新编译python即可</p>
 </blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum install libffi-devel -y</span><br><span class="line">cd /usr/local/src/Python-3.7.1</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>另外在切换服务器python版本时 要注意yum以及其它使用到python的地方也要适当做修正</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">__#</span>!/usr/bin/python2__</span><br><span class="line">import sys</span><br><span class="line">try:</span><br><span class="line">    import yum</span><br><span class="line">except ImportError:</span><br><span class="line">........</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>!/usr/bin/python2</span><br><span class="line">import sys</span><br><span class="line">try:</span><br><span class="line">    import yum</span><br><span class="line">except ImportError:</span><br><span class="line">........</span><br></pre></td></tr></table></figure>
 
       
     </div>
